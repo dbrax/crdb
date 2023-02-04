@@ -37,11 +37,11 @@ return redirect($redirect);
 
 ### Mastercard View
 
-<img src="https://github.com/dbrax/crdb/blob/main/mastercard.png">
+<img src="https://github.com/dbrax/crdb/blob/main/mastercard2.png">
 
 ### Visa View
 
-<img src="https://github.com/dbrax/crdb/blob/main/visa.png">
+<img src="https://github.com/dbrax/crdb/blob/main/visa2.png">
 
 ### Testing
 
