@@ -9,7 +9,27 @@ composer require epmnzava/crdb
 ## Usage
 
 ```php
-// Usage description here
+
+<?php
+namespace App\Http\Controllers;
+
+use Epmnzava\Crdb\Crdb;
+
+class PaymentController extends Controller
+{
+public function payVisa(){
+$crdb = new Crdb;
+$crdb->makepayment($card, $order_referenceId, $amount, $currency);
+
+#example..
+$redirect = $crdb->makepayment("Visa", 4434345, "4000", "TZS");
+$redirect = $crdb->makepayment("MasterCard", 4434345, "4000", "TZS");
+
+return redirect($redirect);
+
+}
+
+}
 ```
 
 ### Testing
