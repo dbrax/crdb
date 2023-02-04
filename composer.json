@@ -1,11 +1,11 @@
 {
-    "name": "epmnzava/crdb-bank-mastercard-visa-laravel",
-    "description": "laravel package for crdb mastercard and visa online payment",
+    "name": "epmnzava/crdb",
+    "description": "Mastercard and Visa for CRDB",
     "keywords": [
         "epmnzava",
-        "crdb-bank-mastercard-visa-laravel"
+        "crdb"
     ],
-    "homepage": "https://github.com/dbraxs/crdb-bank-mastercard-visa-laravel",
+    "homepage": "https://github.com/epmnzava/crdb",
     "license": "MIT",
     "type": "library",
     "authors": [

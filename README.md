@@ -3,7 +3,7 @@
 You can install the package via composer:
 
 ```bash
-composer require epmnzava/crdb-bank-mastercard-visa-laravel
+composer require epmnzava/crdb
 ```
 
 ## Usage
