@@ -1,3 +1,5 @@
+<img src="https://github.com/dbrax/crdb/blob/main/epmnzava_crdb.png">
+
 ## Installation
 
 You can install the package via composer:
@@ -17,7 +19,7 @@ use Epmnzava\Crdb\Crdb;
 
 class PaymentController extends Controller
 {
-public function payVisa(){
+public function payOnline(){
 $crdb = new Crdb;
 $crdb->makepayment($card, $order_referenceId, $amount, $currency);
 
