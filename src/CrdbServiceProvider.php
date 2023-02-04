@@ -14,29 +14,29 @@ class CrdbServiceProvider extends ServiceProvider
         /*
          * Optional methods to load your package assets
          */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'crdb-bank-mastercard-visa-laravel');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'crdb-bank-mastercard-visa-laravel');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'crdb');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'crdb');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('crdb.php'),
+                __DIR__.'/../config/config.php' => config_path('crdb.php'),
             ], 'config');
 
             // Publishing the views.
             /*$this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views/vendor/crdb-bank-mastercard-visa-laravel'),
+                __DIR__.'/../resources/views' => resource_path('views/vendor/crdb'),
             ], 'views');*/
 
             // Publishing assets.
             /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/crdb-bank-mastercard-visa-laravel'),
+                __DIR__.'/../resources/assets' => public_path('vendor/crdb'),
             ], 'assets');*/
 
             // Publishing the translation files.
             /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/crdb-bank-mastercard-visa-laravel'),
+                __DIR__.'/../resources/lang' => resource_path('lang/vendor/crdb'),
             ], 'lang');*/
 
             // Registering package commands.
@@ -50,10 +50,10 @@ class CrdbServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'crdb');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'crdb');
 
         // Register the main class to use with the facade
-        $this->app->singleton('Crdb', function () {
+        $this->app->singleton('crdb', function () {
             return new Crdb;
         });
     }

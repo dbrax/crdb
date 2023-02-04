@@ -16,6 +16,6 @@ class CrdbFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'Crdb';
+        return 'crdb';
     }
 }
