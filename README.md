@@ -8,6 +8,22 @@ You can install the package via composer:
 composer require epmnzava/crdb
 ```
 
+## Environment Variables
+
+```php
+//.env
+CARD_PAYMENT_ACCESS_CODE="given access code by CRDB"
+
+CARD_PAYMENT_URL=  https://migs-mtf.mastercard.com.au/vpcpay
+
+CARD_PAYMENT_SECURE_SECRET="Your given secure secret code"
+
+CARD_PAYMENT_MERCHANT_ID="your merchant ID name"
+
+CARD_PAYMENT_REDIRECT_URL="your redirect url"
+
+```
+
 ## Usage
 
 ```php
