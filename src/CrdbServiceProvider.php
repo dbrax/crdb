@@ -21,7 +21,7 @@ class CrdbServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/config.php' => config_path('Crdb.php'),
+                __DIR__ . '/../config/config.php' => config_path('crdb.php'),
             ], 'config');
 
             // Publishing the views.
@@ -50,7 +50,7 @@ class CrdbServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'Crdb');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'crdb');
 
         // Register the main class to use with the facade
         $this->app->singleton('Crdb', function () {
